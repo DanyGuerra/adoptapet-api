@@ -13,7 +13,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect(
   process.env.MONGO_URI, // obtiene la url de conexión desde las variables de entorno
-  { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
+  {useNewUrlParser: true}
 );
 mongoose.set("debug", true)
 
