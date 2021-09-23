@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 // Configuracion de la base de datos
 const mongoose = require('mongoose');
 mongoose.connect(
-  process.env.MONGODB_URI, // obtiene la url de conexión desde las variables de entorno
+  process.env.MONGO_URI, // obtiene la url de conexión desde las variables de entorno
   { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
 );
 
